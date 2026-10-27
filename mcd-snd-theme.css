@@ -185,6 +185,7 @@ body::before {
     grid-area: logo;
     width: min(var(--sp_header-logo-size), 20rem);
     background: var(--snd-logo) no-repeat center;
+    background-size: contain !important;
     height: 7.8rem;
     justify-self: center;
     margin: 0 auto 0.2rem;
