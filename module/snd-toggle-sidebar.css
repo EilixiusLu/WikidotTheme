@@ -1,0 +1,148 @@
+@media (min-width: 769px) {
+    :root {
+        --toggle-sidebar-width: 19.5rem;
+    }
+
+    #top-bar .mobile-top-bar {
+        display: block;
+        position: static;
+        width: 0;
+        height: 0;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+    }
+
+    #top-bar .mobile-top-bar > ul,
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #top-bar .mobile-top-bar .open-menu,
+    #top-bar .open-menu,
+    #top-bar .open-menu p {
+        display: block;
+        position: static;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    #top-bar .open-menu a,
+    #top-bar .mobile-top-bar .open-menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0.5em;
+        left: 0.5em;
+        z-index: 101;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        width: 32px;
+        height: 32px;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid rgb(var(--eqe-main, 64, 23, 68));
+        background-color: rgb(var(--eqe-main, 64, 23, 68));
+        color: rgb(var(--light-gray-monochrome, 255, 255, 255));
+        border-radius: 0;
+        box-shadow: 0 2px 6px rgba(var(--dark-gray-monochrome, 52, 31, 52), 0.35);
+        box-sizing: border-box;
+        pointer-events: auto;
+        transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+    }
+
+    #top-bar .open-menu a:hover,
+    #top-bar .mobile-top-bar .open-menu a:hover {
+        text-decoration: none;
+        background-color: rgb(var(--bright-accent, 180, 35, 180));
+        border-color: rgb(var(--bright-accent, 180, 35, 180));
+        color: rgb(var(--light-gray-monochrome, 255, 255, 255));
+    }
+
+    #top-bar .open-menu a:active,
+    #top-bar .mobile-top-bar .open-menu a:active {
+        background-color: rgb(var(--pale-accent, 216, 39, 216));
+        border-color: rgb(var(--pale-accent, 216, 39, 216));
+        color: rgb(var(--light-gray-monochrome, 255, 255, 255));
+    }
+
+    #content-wrap {
+        justify-content: center;
+    }
+
+    #main-content {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 0;
+        flex: 0 1 48rem;
+        width: 100%;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    div#side-bar,
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: calc(-1 * var(--toggle-sidebar-width, 19.5rem) - 2rem);
+        width: var(--toggle-sidebar-width, 19.5rem);
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 100;
+        padding: 3em 1em 1em 1em;
+        background-color: rgb(var(--pale-gray-monochrome, 248, 230, 238));
+        border: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        transition: left 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+        flex: 0 0 0;
+        scrollbar-width: thin;
+    }
+
+    #side-bar .side-block,
+    #side-bar div[class*="side-block"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    div#side-bar:target,
+    #side-bar:target,
+    div#side-bar:focus-within,
+    #side-bar:focus-within {
+        left: 0;
+        box-shadow: 4px 0 18px rgba(var(--dark-gray-monochrome, 52, 31, 52), 0.45);
+    }
+
+    div#side-bar:target .close-menu,
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: var(--toggle-sidebar-width, 19.5rem);
+        width: calc(100vw - var(--toggle-sidebar-width, 19.5rem));
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0;
+        opacity: 1;
+        z-index: -1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    div#side-bar:not(:target) .close-menu,
+    #side-bar:not(:target) .close-menu {
+        display: none;
+    }
+}
