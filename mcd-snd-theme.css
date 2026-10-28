@@ -2,8 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200');
 @import url("https://cdn.scpwiki.com/theme/en/sigma/css/sigma.min.css");
-@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/WikidotTheme@v1.0.7/lib/sigma-plus.css");
-@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/WikidotTheme@v1.0.7/lib/editor-icons.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/WikidotTheme@v1.0.8/lib/sigma-plus.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/WikidotTheme@v1.0.8/lib/editor-icons.css");
 
 /* 
     SCP Sigma-9
@@ -185,7 +185,7 @@ body::before {
     grid-area: logo;
     width: min(var(--sp_header-logo-size), 20rem);
     background: var(--snd-logo) no-repeat center;
-    background-size: contain !important;
+    background-size: contain;
     height: 7.8rem;
     justify-self: center;
     margin: 0 auto 0.2rem;
@@ -1718,14 +1718,14 @@ table.wiki-content-table th p {
 :root #main-content div.page-rate-widget-box,
 div.page-rate-widget-box,
 .page-rate-widget-box {
-    display: inline-flex !important;
-    align-items: stretch !important;
-    flex-wrap: nowrap !important;
-    border-radius: 0px !important;
-    background-color: rgb(var(--snd-main)) !important;
-    border: 2px solid rgb(var(--snd-main)) !important;
-    box-shadow: 0 2px 6px rgba(var(--dark-gray-monochrome), 0.35) !important;
-    padding: 0 !important;
+    display: inline-flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 0px;
+    background-color: rgb(var(--snd-main));
+    border: 2px solid rgb(var(--snd-main));
+    box-shadow: 0 2px 6px rgba(var(--dark-gray-monochrome), 0.35);
+    padding: 0;
     margin-right: 0;
     margin-bottom: 10px;
     overflow: hidden;
@@ -1736,21 +1736,21 @@ div.page-rate-widget-box,
 :root #main-content div.page-rate-widget-box .rate-points,
 div.page-rate-widget-box .rate-points,
 .page-rate-widget-box .rate-points {
-    background-color: rgb(var(--snd-main)) !important;
-    color: rgb(var(--light-gray-monochrome)) !important;
-    border: none !important;
-    padding: 4px 12px !important;
+    background-color: rgb(var(--snd-main));
+    color: rgb(var(--light-gray-monochrome));
+    border: none;
+    padding: 4px 12px;
     font-weight: 600;
     font-size: 0.9em;
-    display: inline-flex !important;
-    align-items: center !important;
+    display: inline-flex;
+    align-items: center;
     border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
 
 .page-rate-widget-box .rate-points .number {
-    color: rgb(var(--light-gray-monochrome)) !important;
+    color: rgb(var(--light-gray-monochrome));
     font-weight: 700;
     margin-left: 2px;
 }
@@ -1758,14 +1758,14 @@ div.page-rate-widget-box .rate-points,
 :root #main-content div.page-rate-widget-box span.btn,
 div.page-rate-widget-box .btn,
 .page-rate-widget-box .btn {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    display: inline-flex !important;
-    align-items: stretch !important;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: stretch;
 }
 
 :root #main-content div.page-rate-widget-box span.rateup,
@@ -1775,32 +1775,32 @@ div.page-rate-widget-box .ratedown,
 .page-rate-widget-box .rateup,
 .page-rate-widget-box .ratedown {
     background-color: rgb(var(--pale-gray-monochrome)) !important;
-    border: none !important;
-    border-left: 1px solid rgba(var(--table-border-color), 0.5) !important;
+    border: none;
+    border-left: 1px solid rgba(var(--table-border-color), 0.5);
 }
 
 :root #main-content div.page-rate-widget-box span.cancel,
 div.page-rate-widget-box .cancel,
 .page-rate-widget-box .cancel {
     background-color: rgb(var(--gray-monochrome)) !important;
-    border: none !important;
-    border-left: 1px solid rgb(var(--dark-gray-monochrome)) !important;
+    border: none;
+    border-left: 1px solid rgb(var(--dark-gray-monochrome));
 }
 
 :root #main-content div.page-rate-widget-box :is(.rateup, .ratedown) a,
 div.page-rate-widget-box :is(.rateup, .ratedown) a,
 .page-rate-widget-box .rateup a,
 .page-rate-widget-box .ratedown a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 1px 5px !important;
-    background-color: transparent !important;
-    color: rgb(var(--snd-main)) !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border: none !important;
-    margin: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 5px;
+    background-color: transparent;
+    color: rgb(var(--snd-main));
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    margin: 0;
     transition: background-color 0.18s ease, color 0.18s ease;
 }
 
@@ -1808,93 +1808,93 @@ div.page-rate-widget-box :is(.rateup, .ratedown) a,
 div.page-rate-widget-box :is(.rateup, .ratedown) a:hover,
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
-    background-color: rgb(var(--bright-accent)) !important;
-    color: rgb(var(--light-gray-monochrome)) !important;
+    background-color: rgb(var(--bright-accent));
+    color: rgb(var(--light-gray-monochrome));
 }
 
 :root #main-content div.page-rate-widget-box :is(.rateup, .ratedown) a:active,
 div.page-rate-widget-box :is(.rateup, .ratedown) a:active,
 .page-rate-widget-box .rateup a:active,
 .page-rate-widget-box .ratedown a:active {
-    background-color: rgb(var(--pale-accent)) !important;
-    color: rgb(var(--light-gray-monochrome)) !important;
+    background-color: rgb(var(--pale-accent));
+    color: rgb(var(--light-gray-monochrome));
 }
 
 :root #main-content div.page-rate-widget-box span.cancel a,
 div.page-rate-widget-box .cancel a,
 .page-rate-widget-box .cancel a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 1px 5px !important;
-    background-color: transparent !important;
-    color: rgb(var(--pale-gray-monochrome)) !important;
-    font-weight: normal !important;
-    text-decoration: none !important;
-    border: none !important;
-    margin: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 5px;
+    background-color: transparent;
+    color: rgb(var(--pale-gray-monochrome));
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+    margin: 0;
     transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 :root #main-content div.page-rate-widget-box span.cancel a:hover,
 div.page-rate-widget-box .cancel a:hover,
 .page-rate-widget-box .cancel a:hover {
-    background-color: rgb(var(--dark-accent)) !important;
-    color: rgb(var(--light-gray-monochrome)) !important;
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--light-gray-monochrome));
 }
 
 /* =著作信息评分模块= */
 :root #main-content div.creditRate .rateBox,
 div.creditRate .rateBox,
 .rateBox {
-    display: inline-block !important;
-    margin-bottom: 10px !important;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 :root #main-content div.rate-box-with-credit-button,
 div.rate-box-with-credit-button,
 .rate-box-with-credit-button {
-    display: inline-flex !important;
-    align-items: stretch !important;
-    flex-wrap: nowrap !important;
-    border-radius: 0px !important;
-    background-color: rgb(var(--snd-main)) !important;
-    border: 2px solid rgb(var(--snd-main)) !important;
-    box-shadow: 0 2px 6px rgba(var(--dark-gray-monochrome), 0.35) !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
+    display: inline-flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 0px;
+    background-color: rgb(var(--snd-main));
+    border: 2px solid rgb(var(--snd-main));
+    box-shadow: 0 2px 6px rgba(var(--dark-gray-monochrome), 0.35);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 :root #main-content div.rate-box-with-credit-button .page-rate-widget-box,
 div.rate-box-with-credit-button .page-rate-widget-box,
 .rate-box-with-credit-button .page-rate-widget-box {
-    border: none !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    background-color: transparent;
 }
 
 :root #main-content div.rate-box-with-credit-button .creditButton,
 div.rate-box-with-credit-button .creditButton,
 .rate-box-with-credit-button .creditButton {
-    display: inline-flex !important;
-    align-items: stretch !important;
-    background-color: rgb(var(--gray-monochrome)) !important;
-    border: none !important;
-    border-left: 1px solid rgb(var(--dark-gray-monochrome)) !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    display: inline-flex;
+    align-items: stretch;
+    background-color: rgb(var(--gray-monochrome));
+    border: none;
+    border-left: 1px solid rgb(var(--dark-gray-monochrome));
+    margin: 0;
+    padding: 0;
 }
 
 :root #main-content div.rate-box-with-credit-button .creditButton p,
 div.rate-box-with-credit-button .creditButton p,
 .rate-box-with-credit-button .creditButton p {
-    margin: 0 !important;
-    padding: 0 !important;
-    display: inline-flex !important;
-    align-items: stretch !important;
-    font-size: unset !important;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: stretch;
+    font-size: unset;
 }
 
 :root #main-content div.rate-box-with-credit-button .creditButton a,
@@ -1902,23 +1902,21 @@ div.rate-box-with-credit-button .creditButton p,
 div.rate-box-with-credit-button .creditButton a,
 div.creditButton p a,
 .rate-box-with-credit-button .creditButton a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 1px 7px !important;
-    width: auto !important;
-    inline-size: auto !important;
-    block-size: auto !important;
-    background-color: transparent !important;
-    background: transparent !important;
-    color: rgb(var(--pale-gray-monochrome)) !important;
-    font-weight: normal !important;
-    font-size: 1.15em !important;
-    text-decoration: none !important;
-    border: none !important;
-    border-inline-start: none !important;
-    margin: 0 !important;
-    box-shadow: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 7px;
+    width: auto;
+    block-size: auto;
+    background: transparent;
+    color: rgb(var(--pale-gray-monochrome));
+    font-weight: normal;
+    font-size: 1.15em;
+    text-decoration: none;
+    border: none;
+    border-inline-start: none;
+    margin: 0;
+    box-shadow: none;
     transition: background-color 0.18s ease, color 0.18s ease;
 }
 
@@ -1926,14 +1924,15 @@ div.creditButton p a,
 :root #main-content div.creditButton p a:is(:hover, :focus),
 div.rate-box-with-credit-button .creditButton a:hover,
 .rate-box-with-credit-button .creditButton a:hover {
-    background-color: rgb(var(--dark-accent)) !important;
-    color: rgb(var(--light-gray-monochrome)) !important;
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--light-gray-monochrome));
 }
 
+div.modalbox,
 .modalbox {
-    border: rgb(var(--snd-main)) solid 1px !important;
-    border-radius: 0px !important;
-    box-shadow: 0 2px 6px rgba(var(--dark-accent), .5) !important;
+    border: rgb(var(--snd-main)) solid 1px;
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(var(--dark-accent), .5);
 }
 /* #endregion */
 
@@ -2128,9 +2127,10 @@ div.rate-box-with-credit-button .creditButton a:hover,
     display: flex;
 }
 
+#main-content .mcd-card-face p,
 .mcd-card-face p {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
     line-height: inherit;
 }
 
@@ -2209,7 +2209,7 @@ div.rate-box-with-credit-button .creditButton a:hover,
 }
 
 .mcd-card-front .contact-icon {
-    font-family: 'Material Symbols Outlined' !important;
+    font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
     font-size: 1.05rem;
